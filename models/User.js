@@ -1,9 +1,14 @@
 const mongoose = require("mongoose");
 
-const UserSchema = new mongoose.Schema({
+const Schema = mongoose.Schema;
+
+const UserSchema = new Schema({
+  _id: {
+    type: Schema.type.ObjectId,
+  },
   name: {
     type: String,
-    required: true,
+    required: [true, "No name exist for this profile"],
   },
   email: {
     type: String,
@@ -20,6 +25,11 @@ const UserSchema = new mongoose.Schema({
   date: {
     type: Date,
     default: Date.now,
+  },
+  age: {
+    type: Number,
+    min: 13,
+    max: 65,
   },
   vigama: {
     level: Number,
