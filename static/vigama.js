@@ -7,13 +7,11 @@ let vp = 0;
 const specializedPoints = new Map();
 
 const levelUp = () => {
-    level++;
-}
+  level++;
+};
 
-const studyHours 
+const studyHours = () => {};
 
-const main() = () => {
-
-}
+const main = () => {};
 
 main();
