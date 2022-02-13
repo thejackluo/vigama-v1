@@ -12,8 +12,8 @@ function App() {
   const levelXP = [0, 50, 150, 300, 500, 750];
 
   const checkLevel = () => {
+    console.log(totalXP);
     if (totalXP >= levelXP[level]) {
-      console.log(totalXP);
       setLevelSpecificXP(
         (prev) => prev - (levelXP[level] - levelXP[level - 1])
       );
@@ -29,12 +29,12 @@ function App() {
   };
 
   const handleClickButton1 = () => {
+    checkLevel();
     // Total XP
     setTotalXP((prev) => prev + hourlyXP);
 
     // Level Specific XP
     setLevelSpecificXP((prev) => prev + hourlyXP);
-    checkLevel();
   };
 
   return (
@@ -52,7 +52,13 @@ function App() {
         <li></li>
       </ul>
       <div>
-        <button onClick={handleClickButton1}>One hour of study</button>
+        <button
+          onClick={() => {
+            handleClickButton1();
+          }}
+        >
+          One hour of study
+        </button>
         <button>Button 2</button>
         <button>Button 3</button>
         <button>Button 4</button>
