@@ -1,22 +1,43 @@
-// Author: Jack Luo
+/*
+  Name: index.tsx
+  Author: Jack Luo
+  Description: This is the home page of the application
 
-// Next Imports
+  === Imports === 
+  Next.js, React.js, Chakra, React Hooks
+
+  === Component Imports ===
+  
+  
+  === State changes ===
+
+
+  === API routes ===
+
+
+  === Component Structure ===
+
+
+*/
+
+// Default Imports (required for each file)
+import * as N from "next"; // Next.js
+import { useState, useEffect } from "react"; // React Hooks
+import * as J from "@chakra-ui/react"; // Chakra UI
+import styles from "@/styles/Home.module.css";
+
 import Head from "next/head";
 import Image from "next/image";
 import { Inter } from "next/font/google";
 
-// Style Inputs
-import styles from "@/styles/Home.module.css";
-
-// React Imports
-import { useState } from "react";
-
-// Chakra imports
-import * as J from "@chakra-ui/react";
-
 // Component Imports
 import Profile from "@/components/reusable/profile";
 
+// State changes
+
+// API routes
+
+// Component Structure
 const inter = Inter({ subsets: ["latin"] });
 
 export default function Home() {
@@ -61,14 +82,14 @@ export default function Home() {
         {/* Main Application Start */}
         <div>
           <div className={styles.center}>
-            {/* <J.Text
+            <J.Text
               bgGradient="linear(to-l, #7928CA, #FF0080)"
               bgClip="text"
               fontSize="6xl"
               fontWeight="extrabold"
             >
               Welcome to your task list
-            </J.Text> */}
+            </J.Text>
           </div>
           <Profile />
         </div>

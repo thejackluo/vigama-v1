@@ -3,6 +3,7 @@ This document serves as a simple description of what css files there and the usa
 Global Styles
 
 - globals.css serves as a global style for the whole application (usually this means normalization and fonts)
+  Note: you can't import global css in any files other than the app file
 
 Page specific styles
 

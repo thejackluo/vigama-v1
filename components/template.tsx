@@ -25,7 +25,6 @@
 import * as N from "next"; // Next.js
 import { useState, useEffect } from "react"; // React Hooks
 import * as J from "@chakra-ui/react"; // Chakra UI
-import "@/styles/globals.css"; // Global CSS
 
 // Component Imports
 

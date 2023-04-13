@@ -1,16 +1,45 @@
-import Head from "next/head";
-// Get more default next imports like this
-import { Inter } from "next/font/google";
-import styles from "@/styles/Home.module.css";
-import { useState } from "react";
+/*
+  Name: timer.tsx
+  Author: Jack Luo
+  Description: This is a timer component that contains a timer module that can be used to time the user's study sessions.
 
-// Chakra imports
-import * as Jack from "@chakra-ui/react";
+  === Imports === 
+  Next.js, React.js, Chakra, React Hooks
+
+  === Component Imports ===
+  
+  
+  === State changes ===
+
+
+  === API routes ===
+
+
+  === Component Structure ===
+
+
+*/
+
+// Default Imports (required for each file)
+import * as N from "next"; // Next.js
+import { useState, useEffect } from "react"; // React Hooks
+import * as J from "@chakra-ui/react"; // Chakra UI
+
+import Head from "next/head";
+import { Inter } from "next/font/google";
 import { time } from "console";
+
+// Component Imports
+
+// State changes
+
+// API routes
+
+// Component Structure
 
 const inter = Inter({ subsets: ["latin"] });
 
-export default function Home() {
+export default function Timer() {
   // Timer function
   const [totalTime, setTotalTime] = useState(0);
   const [liveTime, setLiveTime] = useState(0);
@@ -25,9 +54,9 @@ export default function Home() {
       <div>
         <h2>You have worked for {totalTime} seconds</h2>
       </div>
-      <Jack.Button colorScheme="pink" size="lg" onClick={handleTimer}>
+      <J.Button colorScheme="pink" size="lg" onClick={handleTimer}>
         Start Timer
-      </Jack.Button>
+      </J.Button>
       {/* h2 text that fits the theme and shows the live time in seconds */}
       <div>
         <h2>LIVE: {liveTime} seconds</h2>
