@@ -31,7 +31,7 @@
 import * as N from "next"; // Next.js
 import { useState, useEffect } from "react"; // React Hooks
 import * as J from "@chakra-ui/react"; // Chakra UI
-import styles from "@/styles/Home.module.css";
+import styles from "@/styles/Index.module.css";
 
 import Head from "next/head";
 import Image from "next/image";

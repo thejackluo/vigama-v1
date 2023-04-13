@@ -50,17 +50,18 @@ export default function Timer() {
 
   return (
     <>
-      <h1>Timer</h1>
-      <div>
-        <h2>You have worked for {totalTime} seconds</h2>
-      </div>
-      <J.Button colorScheme="pink" size="lg" onClick={handleTimer}>
-        Start Timer
-      </J.Button>
-      {/* h2 text that fits the theme and shows the live time in seconds */}
-      <div>
-        <h2>LIVE: {liveTime} seconds</h2>
-      </div>
+      <J.Card>
+        <J.CardBody>
+          <div>
+            <J.Heading>Timer</J.Heading>
+            <h2>You have worked for {totalTime} seconds</h2>
+            <h2>LIVE: {liveTime} seconds</h2>
+          </div>
+          <J.Button colorScheme="pink" size="lg" onClick={handleTimer}>
+            Start Timer
+          </J.Button>
+        </J.CardBody>
+      </J.Card>
     </>
   );
 }
