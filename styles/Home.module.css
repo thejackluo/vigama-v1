@@ -1,3 +1,5 @@
+/* Default main style to keep it clean and consistent using flexbox */
+
 .main {
   display: flex;
   flex-direction: column;
