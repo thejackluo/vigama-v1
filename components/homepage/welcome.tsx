@@ -42,7 +42,14 @@ export default function Welcome() {
     <>
       {/* Header Element */}
       <div>
-        {/* <p>Welcome back&nbsp;{name}</p> */}
+        <J.Text
+          bgGradient="linear(to-l, #7928CA, #FF0080)"
+          bgClip="text"
+          fontSize="6xl"
+          fontWeight="extrabold"
+        >
+          VIGAMA
+        </J.Text>
         <div>
           <a
             href="https://jack-luo.com"
@@ -59,6 +66,9 @@ export default function Welcome() {
             />
           </a>
         </div>
+
+        {/* Old Welcome back message */}
+        {/* <p>Welcome back&nbsp;{name}</p> */}
       </div>
     </>
   );

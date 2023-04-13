@@ -40,13 +40,13 @@ import { time } from "console";
 const inter = Inter({ subsets: ["latin"] });
 
 export default function Timer() {
-  // Timer function
+  // States
   const [totalTime, setTotalTime] = useState(0);
   const [liveTime, setLiveTime] = useState(0);
   const [timeRunning, setTimeRunning] = useState(false);
 
+  // Use effect to update the live time
   const handleTimer = () => {};
-  // End timer function
 
   return (
     <>
