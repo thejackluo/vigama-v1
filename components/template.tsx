@@ -28,17 +28,20 @@ import * as J from "@chakra-ui/react"; // Chakra UI
 import "@/styles/globals.css"; // Global CSS
 
 // Component Imports
-import Profile from "@/components/reusable/profile";
 
 // State changes
 
 // API routes
 
 // Component Structure
-export default function Home() {
+
+export default function Template() {
   return (
     <>
-      <h1>This is a template element, edit me to start working on it!</h1>
+      <h1>
+        Hello, This is a template element, edit me to start developing the
+        actual template!
+      </h1>
     </>
   );
 }

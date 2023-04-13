@@ -1,30 +1,43 @@
-import Head from "next/head";
-// Get more default next imports like this
-import { Inter } from "next/font/google";
-import styles from "@/styles/Home.module.css";
-import { useState } from "react";
-
-// Chakra imports
-import * as Jack from "@chakra-ui/react";
-import { ChakraProvider } from "@chakra-ui/react";
-import * as J from "@chakra-ui/react";
-
-const inter = Inter({ subsets: ["latin"] });
-
 /*
-  Design profile schema for the profile page
+  Name: template.tsx
+  Author: Jack Luo
+  Description: This is a template file that contains a complete documentation on the specifications of the specific component (including imports, 
+  api routes, state changes, etc)
 
-  1. Basic profile information
+  === Imports === 
+  Next.js, React.js, Chakra, React Hooks
 
-  Name
-  Coins
-  Level
-  XP
-  XP to next level
+  === Component Imports ===
+  
+  
+  === State changes ===
+
+
+  === API routes ===
+
+
+  === Component Structure ===
 
 
 */
 
+// Default Imports (required for each file)
+import * as N from "next"; // Next.js
+import { useState, useEffect } from "react"; // React Hooks
+import * as J from "@chakra-ui/react"; // Chakra UI
+import "@/styles/globals.css"; // Global CSS
+
+import Head from "next/head";
+import { Inter } from "next/font/google";
+
+// Component Imports
+
+// State changes
+
+// API routes
+
+// Component Structure
+const inter = Inter({ subsets: ["latin"] });
 const profile = {
   id: "1",
   uid: "stanfordmit",
@@ -38,35 +51,33 @@ const profile = {
 
 export default function Profile() {
   return (
-    <>
-      <J.Card>
-        {/* <J.CardHeader></J.CardHeader> */}
-        <J.CardBody>
-          <J.Box>
-            <J.Center>
-              <J.Heading size="md">Welcome back, {profile.username}</J.Heading>
-            </J.Center>
-            <J.Center>
-              <J.Text>You have been studying for {profile.streak} days!</J.Text>
-            </J.Center>
-            {/* Create a progress bar with text description and progress */}
-            <J.Text>Coins: {profile.coins}</J.Text>
-            <J.Progress value={profile.coins}></J.Progress>
-            <J.Text>Level: {profile.level}</J.Text>
-            <J.Progress value={profile.coins}></J.Progress>
-            <J.Text>XP: {profile.xp}</J.Text>
-            <J.Progress value={profile.coins}></J.Progress>
-          </J.Box>
-        </J.CardBody>
-        <J.CardFooter>
-          <J.Button variant="solid" colorScheme="blue">
-            Profile
-          </J.Button>
-          <J.Button variant="ghost" colorScheme="blue">
-            Settings
-          </J.Button>
-        </J.CardFooter>
-      </J.Card>
-    </>
+    <J.Card>
+      {/* <J.CardHeader></J.CardHeader> */}
+      <J.CardBody>
+        <J.Box>
+          <J.Center>
+            <J.Heading size="md">Welcome back, {profile.username}</J.Heading>
+          </J.Center>
+          <J.Center>
+            <J.Text>You have been studying for {profile.streak} days!</J.Text>
+          </J.Center>
+          {/* Create a progress bar with text description and progress */}
+          <J.Text>Coins: {profile.coins}</J.Text>
+          <J.Progress value={profile.coins}></J.Progress>
+          <J.Text>Level: {profile.level}</J.Text>
+          <J.Progress value={profile.coins}></J.Progress>
+          <J.Text>XP: {profile.xp}</J.Text>
+          <J.Progress value={profile.coins}></J.Progress>
+        </J.Box>
+      </J.CardBody>
+      <J.CardFooter>
+        <J.Button variant="solid" colorScheme="blue">
+          Profile
+        </J.Button>
+        <J.Button variant="ghost" colorScheme="blue">
+          Settings
+        </J.Button>
+      </J.CardFooter>
+    </J.Card>
   );
 }
