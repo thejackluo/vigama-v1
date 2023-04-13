@@ -1,1 +1,2 @@
-Update the template to have specification requirements (IP)
+- Update the template to have specification requirements (DONE)
+- Create a schema for initial states to be stored. (IP)

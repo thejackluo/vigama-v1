@@ -1,6 +1,8 @@
-## Vigama V2
+## Vigama V2 - A revolutionary gamification productivity web application
 
-2023 Rework of vigama using modern web frameworks with space for new expansions in deep learning and development technology.
+This is the 2023 Rework of vigama using modern web frameworks such as next.js with flexibility for new expansions in deep learning and development technology.
+The goal of the application is to help provide user an visual interface to track their personal goals and have fun while staying accountabile with the difficult
+things in life.
 
 Frameworks used:
 
@@ -8,9 +10,9 @@ Frameworks used:
 
 Tools used:
 
-- create react app
+- create-next-app
 
-## Getting Started
+## Development server
 
 How to run the development server!
 
