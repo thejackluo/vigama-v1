@@ -16,8 +16,15 @@
 
 
   === Component Structure ===
-
-
+  The Home page should be a general summary of the application which includes the following:
+  1. A navigation bar that helps you access different pages (Detailed Dashboard, Resources, Settings, Study Session, etc)
+     a). A welcome message that greets the user and displays their username (IP) (From welcome.tsx)
+  2. A profile section that displays the user's profile information (IP) (From profile.tsx)
+  3. A study session to do your work
+     a). A timer to keep track of your study session (IP) (From timer.tsx)
+  4. A task list to keep track of your tasks (IP) (From tasklist.tsx)
+  5. A more detailed section that describes the resources you have in detail (as a summary of the resources page)
+     a). A section that displays the user's resources (IP) (From resources.tsx)
 */
 
 // Default Imports (required for each file)
@@ -32,6 +39,8 @@ import { Inter } from "next/font/google";
 
 // Component Imports
 import Profile from "@/components/reusable/profile";
+import Welcome from "@/components/homepage/welcome";
+import Timer from "@/components/homepage/timer";
 
 // State changes
 
@@ -44,32 +53,9 @@ export default function Home() {
   // User variable
   const [name, setName] = useState("Jack Luo");
 
-  // Function for handling checking off a task
-  const handleCheckTask = () => {
-    /*
-      1. Get the value of the task through a task algorithm
-      2. Calculate the total gold
-      3. Calculate the total XP
-    */
-  };
-
-  /*
-    Algorithm for calculating coins for a task
-  */
-
-  /*
-    Modules for the task list
-    
-    1. Task list
-    2. Task list item
-    
-    For the task list item, there will be a checkbox, a text, and a delete button
-  */
-
   return (
     <>
       <Head>
-        {/* Not important to update this */}
         <title>Vigama</title>
         <meta
           name="description"
@@ -79,24 +65,21 @@ export default function Home() {
         <link rel="icon" href="/vigama.png" />
       </Head>
       <main className={styles.main}>
-        {/* Main Application Start */}
-        <div>
-          <div className={styles.center}>
-            <J.Text
-              bgGradient="linear(to-l, #7928CA, #FF0080)"
-              bgClip="text"
-              fontSize="6xl"
-              fontWeight="extrabold"
-            >
-              Welcome to your task list
-            </J.Text>
+        {/* Header (Includes nav bar and welcome message and profile) */}
+        <header>
+          {/* Nar Bar */}
+          <nav></nav>
+          {/* Welcome and Profile */}
+          <div>
+            <Welcome />
+            <Profile />
           </div>
-          <Profile />
-        </div>
+        </header>
 
-        {/* Main Application End */}
-
-        <div className={styles.grid}></div>
+        {/* Main section (Include study session and task list) */}
+        <main>
+          <Timer />
+        </main>
       </main>
     </>
   );
