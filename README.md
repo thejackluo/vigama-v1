@@ -1,8 +1,14 @@
 ## Vigama V2
 
-2023 Rework of vigama
+2023 Rework of vigama using modern web frameworks with space for new expansions in deep learning and development technology.
 
-This is based on next.js and create react app so thanks to them
+Frameworks used:
+
+- next.js
+
+Tools used:
+
+- create react app
 
 ## Getting Started
 
