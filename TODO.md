@@ -1,1 +1,1 @@
-- Update the template to have specification requirements
+Update the template to have specification requirements (IP)

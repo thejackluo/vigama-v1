@@ -61,14 +61,14 @@ export default function Home() {
         {/* Main Application Start */}
         <div>
           <div className={styles.center}>
-            <J.Text
+            {/* <J.Text
               bgGradient="linear(to-l, #7928CA, #FF0080)"
               bgClip="text"
               fontSize="6xl"
               fontWeight="extrabold"
             >
               Welcome to your task list
-            </J.Text>
+            </J.Text> */}
           </div>
           <Profile />
         </div>
