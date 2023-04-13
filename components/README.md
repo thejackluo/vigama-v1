@@ -6,5 +6,5 @@ General components:
 Specific component:
 
 - Dashboard displays the dashboard of the user (more specification in a bit)
-- Chain is a part of the dashboard and displays a chain moduel
-- TaskList is a simple module that displays task list
+- Chain is a part of the dashboard and displays a chain model (Not Started)
+- TaskList is a simple module that displays task list (Not Started)
