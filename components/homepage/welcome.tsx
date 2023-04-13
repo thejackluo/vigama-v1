@@ -27,6 +27,7 @@ import * as J from "@chakra-ui/react"; // Chakra UI
 
 import Image from "next/image";
 import { Inter } from "next/font/google";
+import styles from "./welcome.module.css";
 
 // Component Imports
 
@@ -40,23 +41,22 @@ const inter = Inter({ subsets: ["latin"] });
 export default function Welcome() {
   return (
     <>
-      {/* Header Element */}
       <div>
-        <J.Text
-          bgGradient="linear(to-l, #7928CA, #FF0080)"
-          bgClip="text"
-          fontSize="6xl"
-          fontWeight="extrabold"
-        >
-          VIGAMA
-        </J.Text>
-        <div>
+        {/* Vigama by Vigama (logo) */}
+        <J.Box className={styles.horizontal}>
+          <J.Text
+            bgGradient="linear(to-l, #7928CA, #FF0080)"
+            bgClip="text"
+            fontSize="6xl"
+            fontWeight="extrabold"
+          >
+            VIGAMA
+          </J.Text>
           <a
             href="https://jack-luo.com"
             target="_blank"
             rel="noopener noreferrer"
           >
-            By{" "}
             <Image
               src="/vigama.png"
               alt="Vigama Logo"
@@ -65,10 +65,12 @@ export default function Welcome() {
               priority
             />
           </a>
-        </div>
+        </J.Box>
 
-        {/* Old Welcome back message */}
-        {/* <p>Welcome back&nbsp;{name}</p> */}
+        {/* Welcome back message */}
+        <div>
+          <p>Welcome back&nbsp;INSERT NAME HERE</p>
+        </div>
       </div>
     </>
   );
