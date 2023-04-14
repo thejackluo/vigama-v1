@@ -36,10 +36,12 @@ import { Inter } from "next/font/google";
 
 // Component Structure
 const inter = Inter({ subsets: ["latin"] });
+
+// eventually this is going to be fetched from the backend
 const profile = {
   id: "1",
   uid: "stanfordmit",
-  username: "jack",
+  username: "thejackluo",
   coins: 0,
   level: 1,
   xp: 0,
