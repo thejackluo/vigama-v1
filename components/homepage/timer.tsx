@@ -6,6 +6,12 @@
   === Imports === 
   Next.js, React.js, Chakra, React Hooks
 
+  === Style imports ===
+  
+  
+  === Next imports ===
+
+
   === Component Imports ===
   
   
@@ -21,17 +27,19 @@
 */
 
 // Default Imports (required for each file)
-import * as N from "next"; // Next.js
 import { useState, useEffect } from "react"; // React Hooks
 import * as J from "@chakra-ui/react"; // Chakra UI
 
+// Next imports
 import Head from "next/head";
 import { Inter } from "next/font/google";
-import { time } from "console";
+
+// Style imports
 
 // Component Imports
 
 // State changes
+import { time } from "console";
 
 // API routes
 

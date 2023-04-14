@@ -6,6 +6,13 @@
   === Imports === 
   Next.js, React.js, Chakra, React Hooks
 
+  
+  === Style imports ===
+  
+  
+  === Next imports ===
+
+
   === Component Imports ===
   
   
@@ -21,12 +28,14 @@
 */
 
 // Default Imports (required for each file)
-import * as N from "next"; // Next.js
 import { useState, useEffect } from "react"; // React Hooks
 import * as J from "@chakra-ui/react"; // Chakra UI
 
+// Next imports
 import Image from "next/image";
 import { Inter } from "next/font/google";
+
+// Style imports
 import styles from "./welcome.module.css";
 
 // Component Imports

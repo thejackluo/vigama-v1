@@ -6,6 +6,12 @@
   === Imports === 
   Next.js, React.js, Chakra, React Hooks
 
+  === Style imports ===
+  
+  
+  === Next imports ===
+
+
   === Component Imports ===
   
   
@@ -28,13 +34,16 @@
 */
 
 // Default Imports (required for each file)
-import * as N from "next"; // Next.js
 import { useState, useEffect } from "react"; // React Hooks
 import * as J from "@chakra-ui/react"; // Chakra UI
+
+// Style imports
 import styles from "@/styles/Index.module.css";
 
+// Next imports
 import Head from "next/head";
 import Image from "next/image";
+import Link from "next/link";
 import { Inter } from "next/font/google";
 
 // Component Imports
@@ -79,6 +88,11 @@ export default function Home() {
         {/* Main section (Include study session and task list) */}
         <main>
           <Timer />
+
+          {/* Link to the game */}
+          {/* <N.Link href="/game/interface"> */}
+          <J.Button>Play Game</J.Button>
+          {/* </N.Link> */}
         </main>
       </main>
     </>

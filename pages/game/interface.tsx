@@ -43,13 +43,12 @@ import * as J from "@chakra-ui/react"; // Chakra UI
 
 // Component Structure
 
-export default function Template() {
+export default function Interface() {
   return (
-    <>
-      <h1>
-        Hello, This is a template element, edit me to start developing the
-        actual template!
-      </h1>
-    </>
+    <J.Flex>
+      <J.Box>
+        <J.Text>Game Interface</J.Text>
+      </J.Box>
+    </J.Flex>
   );
 }
