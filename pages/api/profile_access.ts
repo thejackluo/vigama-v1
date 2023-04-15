@@ -4,6 +4,8 @@
     API URL: http://localhost:3000/api/profile_access
 */
 
+export {};
+
 // import path from "path";
 // import { promises as fs } from "fs";
 
