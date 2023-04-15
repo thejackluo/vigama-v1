@@ -1,0 +1,33 @@
+{
+  "general": {
+    "id": 1,
+    "userid": "thejackluo",
+    "name": "Jack Luo",
+    "description": "Founder of Vigama"
+  },
+
+  "game": {
+    "inventory": [],
+    "general": {
+      "level": 1,
+      "exp": 0,
+      "gold": 0,
+      "gems": 0,
+      "timecoins": 0
+    },
+    "stats": {
+      "health": 100,
+      "attack": 10,
+      "defense": 10,
+      "speed": 10,
+      "luck": 10
+    }
+  },
+
+  "polytopia": {
+    "buildings": [
+      { "x": 1, "y": 1, "type": "town" },
+      { "x": 2, "y": 2, "type": "farm" }
+    ]
+  }
+}
