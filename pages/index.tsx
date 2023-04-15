@@ -8,7 +8,7 @@
 
   === Style imports ===
   
-  
+
   === Next imports ===
 
 
@@ -90,9 +90,9 @@ export default function Home() {
           <Timer />
 
           {/* Link to the game */}
-          {/* <N.Link href="/game/interface"> */}
-          <J.Button>Play Game</J.Button>
-          {/* </N.Link> */}
+          <Link href="/game/interface">
+            <J.Button>Play Game</J.Button>
+          </Link>
         </main>
       </main>
     </>

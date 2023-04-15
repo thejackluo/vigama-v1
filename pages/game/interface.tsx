@@ -42,7 +42,6 @@ import * as J from "@chakra-ui/react"; // Chakra UI
 // API routes
 
 // Component Structure
-
 export default function Interface() {
   return (
     <J.Flex>
