@@ -1,5 +1,7 @@
 /*
     API Description: This API is used to fetch data from the backend to the frontend
+    API Type: GET
+    API URL: http://localhost:3000/api/profile_access
 */
 
 // import path from "path";
