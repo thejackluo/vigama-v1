@@ -1,0 +1,30 @@
+{
+  "powerups": {
+    "powerup": [
+      {
+        "name": "Powerup 1",
+        "description": "Powerup 1 description",
+        "image": "powerup1.png",
+        "price": 100,
+        "type": "powerup",
+        "id": "powerup1"
+      },
+      {
+        "name": "Powerup 2",
+        "description": "Powerup 2 description",
+        "image": "powerup2.png",
+        "price": 200,
+        "type": "powerup",
+        "id": "powerup2"
+      },
+      {
+        "name": "Powerup 3",
+        "description": "Powerup 3 description",
+        "image": "powerup3.png",
+        "price": 300,
+        "type": "powerup",
+        "id": "powerup3"
+      }
+    ]
+  }
+}

@@ -1,0 +1,9 @@
+{
+  "building": {
+    "building": [
+      { "id": 1, "name": "Building 1", "cost": 100 },
+      { "id": 1, "name": "Building 1", "cost": 100 },
+      { "id": 1, "name": "Building 1", "cost": 100 }
+    ]
+  }
+}
