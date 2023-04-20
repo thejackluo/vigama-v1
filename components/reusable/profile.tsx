@@ -20,6 +20,7 @@
 
 
   === API routes ===
+  Use the profile API route to fetch the user's profile information.
 
 
   === Component Structure ===
@@ -47,19 +48,52 @@ import { Box, Center, Heading, Text } from "@chakra-ui/react";
 // Component Structure
 const inter = Inter({ subsets: ["latin"] });
 
-// eventually this is going to be fetched from the backend
-const profile = {
-  id: "1",
-  uid: "stanfordmit",
-  username: "thejackluo",
-  coins: 0,
-  level: 1,
-  xp: 0,
-  streak: 1,
-  xpToNextLevel: 100,
-};
-
 export default function Profile() {
+  // State variables
+
+  // Get the user's profile information from the API route
+  const [profile, setProfile] = useState({
+    general: {
+      id: 1,
+      userid: "test",
+      name: "test",
+      description: "test",
+    },
+
+    game: {
+      inventory: [],
+      general: {
+        level: 1,
+        exp: 0,
+        gold: 0,
+        gems: 0,
+        timecoins: 0,
+      },
+      stats: {
+        health: 100,
+        attack: 10,
+        defense: 10,
+        speed: 10,
+        luck: 10,
+      },
+    },
+
+    polytopia: {
+      buildings: [
+        { x: 1, y: 1, type: "test" },
+        { x: 2, y: 2, type: "test" },
+      ],
+    },
+  });
+
+  // useEffect(() => {
+  //   fetch("/api/profile_access")
+  //     .then((res) => res.json())
+  //     .then((data) => {
+  //       setProfile(data);
+  //     });
+  // }, []);
+
   return (
     <>
       <J.Card>
@@ -67,18 +101,20 @@ export default function Profile() {
         <J.CardBody>
           <J.Box>
             <J.Center>
-              <J.Heading size="md">Welcome back, {profile.username}</J.Heading>
+              <J.Heading size="md">
+                Welcome back, {profile.general.userid}
+              </J.Heading>
             </J.Center>
             <J.Center>
-              <J.Text>You have been studying for {profile.streak} days!</J.Text>
+              <J.Text>You have been studying for XXX days!</J.Text>
             </J.Center>
             {/* Create a progress bar with text description and progress */}
-            <J.Text>Coins: {profile.coins}</J.Text>
-            <J.Progress value={profile.coins}></J.Progress>
-            <J.Text>Level: {profile.level}</J.Text>
-            <J.Progress value={profile.coins}></J.Progress>
-            <J.Text>XP: {profile.xp}</J.Text>
-            <J.Progress value={profile.coins}></J.Progress>
+            <J.Text>Gold: {profile.game.general.gold}</J.Text>
+            <J.Progress value={profile.game.general.gold}></J.Progress>
+            <J.Text>Level: {profile.game.general.level}</J.Text>
+            <J.Progress value={profile.game.general.level}></J.Progress>
+            <J.Text>XP: {profile.game.general.exp}</J.Text>
+            <J.Progress value={profile.game.general.exp}></J.Progress>
           </J.Box>
         </J.CardBody>
         <J.CardFooter>
