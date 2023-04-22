@@ -106,7 +106,9 @@ export default function Profile() {
               </J.Heading>
             </J.Center>
             <J.Center>
-              <J.Text>You have been studying for XXX days!</J.Text>
+              <J.Text>
+                You have been studying for XXX days! I wish you luck!
+              </J.Text>
             </J.Center>
             {/* Create a progress bar with text description and progress */}
             <J.Text>Gold: {profile.game.general.gold}</J.Text>
